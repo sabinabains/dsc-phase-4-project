@@ -1,6 +1,6 @@
 # Overview:
 
-![cyberbullying_pic](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/cyberbullying_pic.jpg)
+![cyberbullying_pic](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/cyberbullying_pic.png)
 
 Kind Inc. would like help protecting users from hate speech.
 
@@ -31,22 +31,22 @@ Stopwords (words such as "a", "is", "as", "the", etc.) have also been removed, a
 Once data cleaning is completed, our top tokens (or words) per label are as follows:
 
 Top Tokens by Gender:
-![gender_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/gender_freqdist.jpg)
+![gender_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/gender_freqdist.png)
 
 Top Tokens by Age:
-![age_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/age_freqdist.jpg)
+![age_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/age_freqdist.png)
 
 Top Tokens by Ethnicity: 
-![ethnicity_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/ethnicity_freqdist.jpg)
+![ethnicity_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/ethnicity_freqdist.png)
 
 Top Tokens by Religion:
-![religion_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/religion_freqdist.jpg)
+![religion_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/religion_freqdist.png)
 
 Top Tokens by Other Cyberbullying:
-![other_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/other_freqdist.jpg)
+![other_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/other_freqdist.png)
 
 Top Tokens by No Cyberbullying:
-![none_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/none_freqdist.jpg)
+![none_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/none_freqdist.png)
 
 An initial look tells us there are some heavy differences in common words used in different types of cyberbullying, however there is some overlap in words in the "other" and "none" cyberbullying categories.
 
