@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # additional files
-/other_files
+/older_files
