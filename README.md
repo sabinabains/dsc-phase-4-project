@@ -2,13 +2,13 @@
 
 ![cyberbullying_pic](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/cyberbullying_pic.png)
 
-Kind Inc. would like help protecting users from hate speech.
+BeKind Org. would like help protecting users from hate speech.
 
 # Business Understanding
 
 Over the past couple of months, Twitter has been in the headlines for the potential acquistion of their company from Elon Musk. This has upset many people, as Musk plans to reduce the level of moderation Twitter currently has on potentially harmful tweets. 
 
-This change will likely lead to a massive increase in hate speech and misinformation, and will negatively affect users. Kind Inc. would like our help to create the model behind a browser extension that can flag tweets that are considered cyberbullying. This way, users have the ability to hide tweets from their feed.
+This change will likely lead to a massive increase in hate speech and misinformation, and will negatively affect users. BeKind Org. would like our help to create the model behind a browser extension that can flag tweets that are considered cyberbullying. This way, users have the ability to hide tweets from their feed.
 
 # Data Understanding and Processing
 
@@ -48,21 +48,52 @@ Top Tokens by Other Cyberbullying:
 Top Tokens by No Cyberbullying:
 ![none_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/none_freqdist.png)
 
-An initial look tells us there are some heavy differences in common words used in different types of cyberbullying, however there is some overlap in words in the "other" and "none" cyberbullying categories.
+An initial look tells us there are some heavy differences in the most common words used in different types of cyberbullying, however there is some overlap in words in the "other" and "none" cyberbullying categories.
 
 # Modeling
 
 ### Multinomial Naive Bayes
 
-Three iterations of Multinomial Naive Bayes were run. Initially, the model was run after only tokenizing the data. This generated the following accuracies. 
+Three iterations of Multinomial Naive Bayes were run. Our baseline model was run after only tokenizing the data. This generated the following accuracies. 
 
 * Training Data Accuracy Score: xx.x%
 * Testing Data Accuracy Score: xx.x%
 
-The second model was run with a cutoff of 
+The second model was run after removing stopwords. This generated the following accuracies:
+
+* Training Data Accuracy Score: xx.x%
+* Testing Data Accuracy Score: xx.x%
+
+The third model removed stopwords and stemmed words, generating the following results:
+
+* Training Data Accuracy Score: xx.x%
+* Testing Data Accuracy Score: xx.x%
+
+The fourth model added bigrams and trigrams to the model, and also increased the features to 80. This generated a much higher accuracy:
+
+* Training Data Accuracy Score: xx.x%
+* Testing Data Accuracy Score: xx.x%
+
+Lastly, by feature engineering columns were added based on whether a tweet was a reply or not, and had an associated link or not:
+
+* Training Data Accuracy Score: xx.x%
+* Testing Data Accuracy Score: xx.x%
+
+While the model greatly improved and showed no signs of overfitting, trying a different model may improve the results further.
 
 
 ### Recurrent Neural Networks
+
+For RNNs, the data had to be reprocessed by encoding. 
+
+The baseline RNN yielded the following accuracies: 
+
+* Training Data Accuracy Score: xx.x%
+* Testing Data Accuracy Score: xx.x%
+
+While our training data performed extremely well, there were sure signs of overfitting. 
+
+For the second iteration, 
 
 # Evaluation
 
