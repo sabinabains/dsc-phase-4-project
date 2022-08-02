@@ -43,9 +43,11 @@ Top Tokens by Religion:
 ![religion_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/religion_freqdist.png)
 
 Top Tokens by Other Cyberbullying:
+
 ![other_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/other_freqdist.png)
 
 Top Tokens by No Cyberbullying:
+
 ![none_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/none_freqdist.png)
 
 An initial look tells us there are some heavy differences in the most common words used in different types of cyberbullying, however there is some overlap in words in the "other" and "none" cyberbullying categories.
@@ -56,28 +58,28 @@ An initial look tells us there are some heavy differences in the most common wor
 
 Three iterations of Multinomial Naive Bayes were run. Our baseline model was run after only tokenizing the data. This generated the following accuracies. 
 
-* Training Accuracy: 56.1%
-* Testing Accuracy: 55.9%
+    * Training Accuracy: 56.1%
+    * Testing Accuracy: 55.9%
 
 The second model was run after removing stopwords. This generated the following accuracies:
 
-* Training Accuracy: 64.1%
-* Testing Accuracy: 66.1%
+    * Training Accuracy: 64.1%
+    * Testing Accuracy: 66.1%
 
 The third model removed stopwords and stemmed words, generating the following results:
 
-* Training Accuracy: 64.9%
-* Testing Accuracy: 66.5%
+    * Training Accuracy: 64.9%
+    * Testing Accuracy: 66.5%
 
 The fourth model added bigrams and trigrams to the model, and also increased the features to 80. This generated a much higher accuracy:
 
-* Training Accuracy: 69.3%
-* Testing Accuracy: 69.7%
+    * Training Accuracy: 69.3%
+    * Testing Accuracy: 69.7%
 
 Lastly, by feature engineering columns were added based on whether a tweet was a reply or not, and had an associated link or not:
 
-* Training Accuracy: 72.5%
-* Testing Accuracy: 72.8%
+    * Training Accuracy: 72.5%
+    * Testing Accuracy: 72.8%
 
 While the model greatly improved and showed no signs of overfitting, trying a different model may improve the results further.
 
@@ -85,24 +87,23 @@ While the model greatly improved and showed no signs of overfitting, trying a di
 
 For RNNs, the data had to be reprocessed by encoding. 
 
-The baseline RNN yielded the following accuracies: 
+Our first RNN model had a high accuracy of 94% on it's training data, but a significantly lower validation accuracy of 82%. this indicates
+we are indeed overfitting.
 
     * Train Accuracy = 94.5%
     * Test Accuracy = 82.8%
 
-While our training data performed extremely well, there were sure signs of overfitting. 
-
-For the second iteration, 
+Our second RNN model closed the gap between training and testing accuracies, by adding regularization through ridge regression, but is still overfitting. 
 
     * Train Accuracy = 91.2%
     * Test Accuracy = 80.5%
     
-Third Iteration:
+Our third RNN model does not overfit onto the training data, and has a testing accuracy of 80% because dropout layers were added.
 
     * Train Accuracy = 87.6%
     * Test Accuracy = 82.2%
     
-Fourth Iteration:
+Once we increased the coefficient our fourth iteration did not overfit as much, however our previous model with dropout laters still outperforms this model.
  
     * Train Accuracy = 84.0%
     * Test Accuracy = 76.4%
