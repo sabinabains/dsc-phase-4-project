@@ -31,15 +31,19 @@ Stopwords (words such as "a", "is", "as", "the", etc.) have also been removed, a
 Once data cleaning is completed, our top tokens (or words) per label are as follows:
 
 Top Tokens by Gender:
+
 ![gender_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/gender_freqdist.png)
 
 Top Tokens by Age:
+
 ![age_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/age_freqdist.png)
 
 Top Tokens by Ethnicity: 
+
 ![ethnicity_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/ethnicity_freqdist.png)
 
 Top Tokens by Religion:
+
 ![religion_freqdist](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/religion_freqdist.png)
 
 Top Tokens by Other Cyberbullying:
@@ -85,7 +89,7 @@ While the model greatly improved and showed no signs of overfitting, trying a di
 
 ### Recurrent Neural Networks
 
-For RNNs, the data had to be reprocessed by encoding. 
+For RNNs, the data had to be reprocessed by turning tweets into sequence data.
 
 Our first RNN model had a high accuracy of 94% on it's training data, but a significantly lower validation accuracy of 82%. this indicates
 we are indeed overfitting.
@@ -120,9 +124,7 @@ However, there are ways to improve this model. as seen in the confusion matrix, 
 Non-cyberbullying was only predicted 35% of the time. This would lead to many flagged tweets, therefore drasticly affecting the purpose of
 browsing twitter.
 
-
 ![confusion_matrix](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/confusion_matrix.png)
-
 
 # Conclusion and Next Steps
 
