@@ -1,3 +1,5 @@
+# Detecting Hate Speech on Twitter
+
 # Overview:
 
 ![cyberbullying_pic](https://github.com/sabinabains/dsc-phase-4-project/blob/main/images/cyberbullying_pic.png)
